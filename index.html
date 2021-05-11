@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maricon Pedro</title>
+    <title>Curriculum Web</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
@@ -14,16 +14,16 @@
     <div class="curriculum">
         <header>
             <div class="botones-nav">
-                <div class="btn-nav active">
+                <div class="btn-nav" id="icon-perfil">
                     <span class="fas fa-user"></span>
                 </div>
-                <div class="btn-nav">
-                    <span class="fas fa-file"></span>
+                <div class="btn-nav" id="icon-exp-laboral">
+                    <span class="fas fa-briefcase"></span>
                 </div>
-                <div class="btn-nav">
-                    <span class="fas fa-pencil-alt"></span>
+                <div class="btn-nav" id="icon-estudios">
+                    <span class="fas fa-university"></span>
                 </div>
-                <div class="btn-nav">
+                <div class="btn-nav" id="icon-contacto">
                     <span class="fas fa-phone"></span>
                 </div>
 
@@ -52,17 +52,11 @@
         </div>
 
         <div class="informacion-curriculum">
-            <div class="perfil" style="display:none;">
+            <div class="perfil active" id="perfil">
                 <div class="informacion-personal">
                     <h1 class="titulo">Información Personal</h1>
                     <p class="descripcion">Soy un Diseñador y Desarrollador Web, actualmente estudiando un grado medio de SMX. Me encanta el aprendizaje y el autoconocimiento, soy una persona abierta y con habilidades para trabajar en equipo y aportar lo mejor de mi a la empresa y a mis compañeros y compañeras de trabajo.</p>
 
-                    <ul>
-                        <li><strong>Edad:</strong> 19 años</li>
-                        <li><strong>Estado Civil:</strong>Soltero</li>
-                        <li><strong>Años de experiencia:</strong>1 año</li>
-
-                    </ul>
                 </div>
 
                 <hr>
@@ -70,7 +64,7 @@
                 <div class="video">
                     <h1 class="titulo">Video Presentación</h1>
 
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/4BRd3cZDAT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/MyIfI-T92wI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <hr>
@@ -90,19 +84,21 @@
 
             </div>
 
-            <div class="exp-laboral" style=""> 
+            <div class="exp-laboral" id="exp-laboral"> 
                 <h1 class="titulo">Experiencia Laboral</h1>
 
                 <div class="arenal">
                     <span class="fas fa-glass-cheers"></span>
 
-                    <p class="descripcion"><strong>Empresa:</strong> L'arenal restaurant <br>
+                    <div class="texto">
+                        <p class="descripcion"><strong>Empresa:</strong> L'arenal restaurant <br></p>
 
-                    <strong>Tiempo laborado:</strong>Diciembre 2019 - Marzo 2020 <br>
+                        <p class="descripcion"><strong>Tiempo laborado:</strong>Diciembre 2019 - Marzo 2020 <br></p>
 
-                    <strong>Sitio web:</strong> https://gruparenal.com/arenal/ <br>
+                        <p class="descripcion"><strong>Sitio web:</strong> https://gruparenal.com/arenal/ <br></p>
 
-                    Mi trabajo era servir como ayudante de cocina y lavar los platos en el restaurante y mantener la cocina y espacios de trabajos limpios.</p>
+                        <p class="descripcion">Mi trabajo era servir como ayudante de cocina y lavar los platos en el restaurante y mantener la cocina y espacios de trabajos limpios.</p>
+                    </div>
                 </div>
 
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11973.987103366955!2d2.1825445074545495!3d41.385016745051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a307e4ef03e9%3A0x44fd0ee725dcb24b!2sArenal%20Restaurant!5e0!3m2!1sen!2ses!4v1620252481187!5m2!1sen!2ses" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -111,15 +107,17 @@
                 <hr>
 
                 <div class="santa-gloria">
-                    <p class="descripcion">
-                        <strong>Empresa:</strong> Santa Gloria Cafeteria <br>
 
-                        <strong>Tiempo laborado:</strong> Abril 2021 - Actualmente <br>
+                    <div class="texto">
+                        <p class="descripcion"><strong>Empresa:</strong> Santa Gloria Cafeteria <br></p>
 
-                        <strong>Sitio web:</strong> https://www.santagloria.com/es <br>
+                        <p class="descripcion"><strong>Tiempo laborado:</strong> Abril 2021 - Actualmente <br></p>
 
-                        Mi trabajo es atender a los clientes con toda amabilidad ofreciendoles el mejor servicio que tengo a mi disposición. Además, también tengo que dedicarme en el obrador preparando la comida,, en la zona de cafetería, caja, pica y limpieza por dentro y fuera del local.
-                    </p>
+                        <p class="descripcion"><strong>Sitio web:</strong> https://www.santagloria.com/es <br></p>
+
+                        <p class="descripcion">Mi trabajo es atender a los clientes con toda amabilidad ofreciendoles el mejor servicio que tengo a mi disposición. Además, también tengo que dedicarme en el obrador preparando la comida,, en la zona de cafetería, caja, pica y limpieza por dentro y fuera del local.
+                        </p>
+                    </div>
 
                     <span class="fas fa-coffee"></span>
                 </div>
@@ -127,12 +125,55 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2994.565329176004!2d2.1031537156915907!3d41.3618007055432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ses!4v1620252918131!5m2!1sen!2ses" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
-            <div class="estudios"></div>
+            <div class="estudios" id="estudios">
+                <h1 class="titulo">Estudios</h1>
+
+                <p class="descripcion"><strong>Titulación:</strong> Educación Secundaria Obligatoria</p>     
+                <p class="descripcion"><strong>Instituto:</strong> Institut Josep Serrat I Bonastre</p>
+                <p class="descripcion"><strong>Período de estudio:</strong> 2016 - 2019</p>
+
+                <hr>
+
+                <p class="descripcion"><strong>Titulación:</strong> Titulo de Grado medio de Sistemas Microinformáticos y Redes</p>
+                <p class="descripcion"><strong>Instituto:</strong> Jesuites Joan XXIII</p>
+                <p class="descripcion"><strong>Período de estudio:</strong> 2019 - 2021</p>
+
+                <hr>
+
+                <h1 class="titulo">Cursos</h1>
+
+                <div class="cursos">
+                    <div class="curso">Diseño Web</div>
+                    <div class="curso">Desarrollo Web</div>
+                    <div class="curso">Ecommerce</div>
+                </div>
+            </div>
+
+            <div class="contacto" id="contacto">
+                <h1 class="titulo">Contacto</h1>
+
+                <form action="">
+                    <input type="text" placeholder="Nombre:">
+
+                    <input type="email" placeholder="Correo Electrónico:">
+
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje..."></textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </div>
 
     </div>
 
+    <select name="language" id="language" onchange="language()">
+        <option value="ES" selected>Español</option>
+        <option value="EN">English</option>
+    </select>
 
 <script src="fontAwesome/js/all.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/language.js"></script>
 </body>
 </html>

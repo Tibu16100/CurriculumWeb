@@ -1,236 +1,28 @@
-*
-    margin: 0
-    padding: 0
-    box-sizing: border-box
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
-
-body
-    background: linear-gradient(90deg, #6a10c4, #689ed5, #badb50, #3bdcab)
-    background-size: 600%
-    animation: gradient 15s ease infinite
-    font-family: 'Lato', sans-serif
-
-@keyframes gradient
-    0%
-        background-position: 0% 50%
-
-    50%
-        background-position: 100% 50%
-
-    100%
-        background-position: 0% 50%
-
-
-@keyframes color
-    0%
-        color: #6a10c4
-
-    50%
-        color: #689ed5
-
-    90% 
-        color: #3bdcab
-
-    100%
-        color: #6a10c4
-
-@function progress($porcentaje)
-    $deg: $porcentaje/100*180
-    @return #{$deg}deg
-
-hr
-    border: 1.7px solid #14BF83
-    opacity: .2
-    border-radius: 50px 
-    margin: 30px 0
-
-strong
-    color: #1FAA79
-
-  
+@import "generales.sass"
 
 /* Curriculum */
 
-.curriculum
-    display: flex
-    margin: 4vw 0 0 10vw
-    // justify-content: center
+@import "curriculum.sass"
 
 /* Header */
 
-header 
-    margin-right: 10px
-    .botones-nav
-        background: white   
-        border-radius: 10px 0 0 10px
-
-        .btn-nav
-            padding: 70px 20px
-            cursor: pointer
-            svg
-                font-size: 24px
-                color: #1CAF82
-        .btn-nav.active
-            border-radius: 10px 0 0 10px
-            background: #1CAF82
-            svg 
-                color: white
+@import "header.sass"
         
-
-
 /* Tarjeta */
 
-.tarjeta
-    text-align: center
-    width: 650px
-    display: inline-block
-
-    .foto
-        width: 100%
-        height: 400px
-        img
-            width: 100%
-            height: 100%
-            border-radius: 5px
-
-    .informacion
-        padding-top: 30px
-        width: 100%
-        height: 350px
-        background: white
-        border-radius: 5px
-        .titulo-perfil
-            font-family: 'Lato', sans-serif
-            font-size: 40px
-            font-weight: 400
-        .profesion
-            margin: 30px 0
-            font-size: 22px
-        .redes
-            margin-top: 100px
-            ul
-                li
-                    list-style: none
-                    display: inline-block
-                    margin: 0 30px
-                    font-size: 24px
-                    color: #1D7B5E
-                    animation: color 15s ease infinite
+@import "tarjetas.sass"
 
 
 /* Informacion Curriculum */
 
-.informacion-curriculum
-    margin-left: 20px
-    background: white
-    overflow-y: scroll
-    overflow-x: hidden
-    width: 800px
-    height: 750px
-    border-radius: 5px
-    padding: 40px
-
-    .titulo
-        color: #1faa79
-        font-weight: 400
-        margin-bottom: 45px
-        font-size: 36px
-
-    .descripcion
-        font-size: 18px
-        line-height: 30px
-        color: black
-        margin-bottom: 20px
-
-    .perfil 
-            ul
-                li
-                    list-style: none
-                    font-size: 17px
-                    color: #000
-                    line-height: 30px
-                    img
-                        width: 30px
-    
-    .idiomas
-        img
-            width: 10vw
-        .graficas
-            margin: 40px 0
-            display: flex
-            flex-wrap: wrap
-            justify-content: center
-            .progreso-circular
-                margin: 0 20px
-                background: linear-gradient( 0deg, #1faa79 50%, rgba(black, .2) 50%)
-                position: relative
-                transform: rotate(90deg)
-                &, 
-                &::before,
-                &::after
-                    width: 180px
-                    height: 180px
-                    border-radius: 50%
-                
-                &::before,
-                &::after
-                    position: absolute
-                    top: 0
-                    left: 0
-                    color: #1faa79
-                    text-align: center
-
-                &::before
-                    content: "Español"
-                    line-height: 125px
-                    font-size: 25px
-                    background: white content-box
-                    padding: 15px
-                    box-sizing: border-box
-                    transform: rotate(-90deg)
-                &::after
-                    content: "100%"
-                    background: linear-gradient(transparent 50%, white 50%)
-                    font-size: 15px
-                    line-height: 210px
-                    transform: scale(1.1) rotate(-90deg)
-    
-    .exp-laboral
-        .arenal
-            display: flex
-            text-align: justify
-            margin-bottom: 20px
-            svg
-                font-size: 80px
-                margin-right: 80px
-                position: relative
-                top: 20px
-                color: #1faa79
-        
-        .santa-gloria
-            display: flex
-            text-align: justify
-            svg 
-                color: #1faa79
-                font-size: 80px 
-                margin-left: 80px
-                position: relative
-                top: 50px
-
-            
+@import "informacion-curriculum.sass"
 
 
+/* Selector de lenguaje */
 
+@import "language-selector.sass"
 
-.informacion-curriculum::-webkit-scrollbar
-    width: 10px
-    border-radius: 5px
-    background: #D8D8D8
+/* MediaQueries */
 
-.informacion-curriculum::-webkit-scrollbar-thumb
-    background: #19BC92
-    border-radius: 4px;
-
-
+@import "mediaqueries.sass"
 

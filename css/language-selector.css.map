@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,AAAC,CACN,UAAU,CAAE,IAAI,CAChB,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,KAAK,CACZ,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,uBAAuB,CAAG",
+    "sources": [
+        "../sass/language-selector.sass"
+    ],
+    "names": [],
+    "file": "language-selector.css"
+}

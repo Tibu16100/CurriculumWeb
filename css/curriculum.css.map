@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,AAAC,CACR,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,YAAY,CACtB",
+    "sources": [
+        "../sass/curriculum.sass"
+    ],
+    "names": [],
+    "file": "curriculum.css"
+}

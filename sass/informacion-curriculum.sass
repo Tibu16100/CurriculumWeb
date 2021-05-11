@@ -1,0 +1,200 @@
+.informacion-curriculum
+    margin-left: 20px
+    background: white
+    overflow-y: scroll
+    overflow-x: hidden
+    width: 800px
+    height: 750px
+    border-radius: 5px
+    padding: 40px
+
+    .active
+        display: inline-block
+
+    .titulo
+        color: #1faa79
+        font-weight: 400
+        margin-bottom: 45px
+        font-size: 36px
+
+    .descripcion
+        font-size: 20px
+        line-height: 30px
+        color: black
+        margin-bottom: 20px
+
+    .perfil 
+        display: none
+        &.active
+            display: inline-block
+        ul
+            li
+                list-style: none
+                font-size: 17px
+                color: #000
+                line-height: 30px
+                img
+                    width: 30px
+    
+    .idiomas
+        display: none
+        img
+            width: 10vw
+        .graficas
+            margin: 40px 0
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            .progreso-circular
+                margin: 0 20px
+                background: linear-gradient( 0deg, #1faa79 50%, rgba(black, .2) 50%)
+                position: relative
+                transform: rotate(90deg)
+                &, 
+                &::before,
+                &::after
+                    width: 180px
+                    height: 180px
+                    border-radius: 50%
+                
+                &::before,
+                &::after
+                    position: absolute
+                    top: 0
+                    left: 0
+                    color: #1faa79
+                    text-align: center
+
+                &::before
+                    content: "Español"
+                    line-height: 125px
+                    font-size: 25px
+                    background: white content-box
+                    padding: 15px
+                    box-sizing: border-box
+                    transform: rotate(-90deg)
+                &::after
+                    content: "100%"
+                    background: linear-gradient(transparent 50%, white 50%)
+                    font-size: 15px
+                    line-height: 210px
+                    transform: scale(1.1) rotate(-90deg)
+            .espanol
+                &::before 
+                    content: "Español"
+                &::after 
+                    content: "100%"
+
+            .ingles
+                &::before 
+                    content: "Inglés"
+                &::after 
+                    content: "70%"
+            
+            .catalan
+                &::before 
+                    content: "Catalán"
+                &::after 
+                    content: "80%"
+                
+                
+    
+    .exp-laboral
+        display: none
+        &.active 
+            display: inline-block
+        .arenal
+            display: flex
+            text-align: justify
+            margin-bottom: 20px
+            svg
+                font-size: 80px
+                margin-right: 80px
+                position: relative
+                top: 20px
+                color: #1faa79
+        
+        .santa-gloria
+            display: flex
+            text-align: justify
+            svg 
+                color: #1faa79
+                font-size: 80px 
+                margin-left: 80px
+                position: relative
+                top: 50px
+
+    .estudios
+        display: none
+        &.active
+            display: inline-block
+        .cursos
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
+            text-align: center
+            .curso
+                display: inline-block
+                width: 150px
+                height: 150px 
+                animation: background-color 10s ease infinite
+                border-radius: 50%
+                text-align: center
+                line-height: 150px 
+                color: white 
+                font-size: 20px 
+    .contacto
+        display: none
+        &.active
+            display: inline-block
+        form
+            width: 80%
+            background: none
+            border: 2px solid #87CCB4
+            border-radius: 30px
+            padding: 60px
+            margin: auto
+
+            input,
+            textarea
+                font-family: 'Open Sans', sans-serif
+                border: none 
+                font-size: 20px
+                font-weight: 300
+                margin-bottom: 30px
+                color: #1faa79
+                outline: none
+                background: none
+                &::placeholder 
+                    color: #87CCB4
+                    font-size: 20px
+                    font-weight: 300
+                &:focus
+                    border: none
+                    outline: none
+                &:active
+                    border: none
+                    outline: none
+            input[type="submit"]
+                border: none
+                background: #1faa79
+                color: white
+                font-size: 20px
+                width: 100%
+                padding: 20px
+                border-radius: 40px
+                cursor: pointer
+
+            
+
+
+
+
+.informacion-curriculum::-webkit-scrollbar
+    width: 10px
+    border-radius: 5px
+    background: #D8D8D8
+
+.informacion-curriculum::-webkit-scrollbar-thumb
+    background: #19BC92
+    border-radius: 4px;
